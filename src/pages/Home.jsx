@@ -45,7 +45,7 @@ const Home = () => {
 
          
         </div>
-        <div className="content">
+        <div className="hero-content">
       <h4>THIS WEEK’S HIGHLIGHTS</h4>
       <h1>Woman In Golden Rings And Necklaces</h1>
       <p>Awesome products for the dynamic urban lifestyle</p>
@@ -88,7 +88,7 @@ const Home = () => {
       <div className="img-box">
         <img src="https://jubilee-demo.myshopify.com/cdn/shop/files/offer-banner-1.jpg?v=1737116523" alt="" />
       </div>
-      <div className="content">
+      <div className="offer-content">
       <p>Diamond Bracelets</p>
       <h2>Rose Gold With Diamond
       Hotsell Bracelet</h2>
