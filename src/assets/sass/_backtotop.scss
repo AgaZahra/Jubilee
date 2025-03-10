@@ -1,0 +1,19 @@
+.back-to-top-button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index:9999 !important;
+    border: none !important;
+    padding: 5px 10px;
+    background-color: $primary-orange;
+    border-radius: 50%;
+    font-size: 1.5rem;
+   color: #fff;
+
+    .center{
+        position: relative;
+        top: 15px;
+        left: 0;
+    }}

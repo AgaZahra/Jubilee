@@ -1,0 +1,251 @@
+@import './mixins';
+
+.my-navbar {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 2rem;
+
+        .menu-item {
+            color: $Black;
+            display: flex;
+            font-size: 18px;
+            font-family: $primary-font;
+
+            &.active {
+                color: $primary-orange !important;
+            }
+
+            &:hover {
+                color: $primary-orange;
+                transition-duration: 0.4s;
+            }
+
+            .icon {
+                display: block;
+                position: relative;
+            }
+        }
+
+        .dropdown {
+            border: 2px solid $primary-orange;
+        }
+    }
+
+    .icon {
+        position: relative;
+        display: flex;
+        gap: 1.1rem;
+        color: black !important;
+
+        .search-icon {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            position: relative;
+            top: .4rem;
+            color: black;
+        }
+
+        .icon-item {
+            color: black;
+            font-size: 1.4rem;
+            font-weight: bolder !important;
+            font-family: $primary-font;
+
+            .basket-icon,
+            .wishlist-icon {
+                position: absolute;
+                top: 5%;
+                background-color: $primary-orange;
+                color: black;
+                font-weight: normal;
+                font-family: $primary-font;
+                padding: 0.1rem 0.4rem;
+                font-size: 0.7rem;
+                border-radius: 100px;
+                cursor: pointer;
+            }
+
+            .basket-icon {
+                left: 70%;
+            }
+
+            .wishlist-icon {
+                right: 1%;
+            }
+
+            &.active {
+                color: $primary-orange;
+            }
+        }
+    }
+
+
+
+
+    .dropdown,
+    .dropdown *,
+    .btn-check:checked+.btn,
+    .btn.active {
+        background-color: transparent !important;
+
+        border: none !important;
+    }
+
+    .dropdown .dropdown-menu {
+        border: 1px solid !important;
+        background-color: #fff !important;
+    }
+
+    .users-name {
+        color: $primary-orange;
+        font-family: $secondary-font;
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 0.3rem;
+    }
+
+    .user-icon {
+        position: relative;
+        top: .2rem;
+        cursor: pointer;
+        color: black !important;
+        font-weight: bolder;
+    }
+
+    .search {
+        font-family: $secondary-font;
+        cursor: pointer;
+
+        .btn-close {
+            background-color: $primary-orange;
+            border: 1px solid $primary-orange;
+        }
+
+        .modal-content {
+            border: 2px solid $primary-orange;
+            overflow: hidden;
+        }
+
+        .modal-body {
+            background-color: $primary-orange !important;
+            border-top: 2px solid $primary-orange;
+        }
+    }
+
+    .navbar-toggler {
+        border: none !important;
+
+        .navbar-toggler-icon {
+            color: $primary-orange !important;
+        }
+    }
+
+    @include sm {
+        .menu {
+            height: 70vh !important;
+            display: block;
+
+            .menu-item {
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+
+        .icon {
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+
+            .icon-item {
+                margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,
+        .basket-icon {
+            display: none !important;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @include md {
+        .menu {
+            height: 70vh !important;
+            display: block;
+
+            .menu-item {
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+
+        .icon {
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+
+            .icon-item {
+                margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,
+        .basket-icon {
+            display: none !important;
+        }
+    }
+
+    @include lg {
+        .menu {
+            height: 61vh !important;
+            display: block;
+
+            .menu-item {
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+
+        .icon {
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+
+            .icon-item {
+                margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,
+        .basket-icon {
+            display: none !important;
+        }
+    }
+}

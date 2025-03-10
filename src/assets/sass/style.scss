@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none !important;
+    }
+    text-decoration: none !important;
+  // border: 1px solid red !important;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+body,html{
+  overflow-x: hidden;
+}
+@import 'variable';
+@import 'footer';
+@import 'mixins';
+@import 'header';
+@import 'faq';
+@import 'about';
+@import 'banner';
+@import 'backtotop';
+@import 'contact';
+@import 'auth';
+@import 'singleCard';
+@import 'checkout';
+@import 'home';
+
+
+.modal-backdrop {
+  display: none !important;
+}
+.modal-open{
+  padding: 0rem !important;
+}
+
+
+
+
+
+
+
+.btn {
+  color: $primary-orange;
+  background-color: $primary-orange;
+  border: 1px solid $primary-orange;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 999;
+  color: black;
+  font-weight: bolder;
+
+  &:hover,
+  &:focus,
+  &:active {
+      background-color: $primary-orange;
+  }
+}
+
+
+
+
+//Table
+
+.table{
+  .head{
+    th{
+        color: $White;
+        background-color: $primary-orange;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+  }
+  .body{
+    td{
+        color:black;
+        font-family: $primary-font;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        img{
+            margin: auto;
+        }
+    }
+   
+  }
+}
+
+.cart-summary{
+  border: 2px solid $primary-orange;
+  width: 30%;
+  padding: 20px;
+  font-size: 1.5rem;
+  color:black;
+  font-weight: bolder;
+}
+
+.checkout-section{
+  .checkout-btn{
+    border: 1px solid $primary-orange;
+    padding: 10px;
+    background-color: $primary-orange;
+    color: #000;
+    font-weight: bolder;
+  }
+}
+
+.quantity{
+  button{
+    margin: 0rem 2rem;
+    padding: .2rem .6rem;
+    background-color: $primary-orange;
+    color: #fff;
+  }
+}
+.icon-remove-basket{
+  font-size: 2rem;
+  color: brown;
+}
+

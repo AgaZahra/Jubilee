@@ -1,0 +1,82 @@
+.checkout{
+    color: $primary-orange;
+    font-family: $secondary-font;
+    height: 270vh;
+      
+    h2{
+      font-weight: bolder;
+      text-align: center;
+      font-size: 3rem;
+      color:#000;
+    }
+    
+    p{
+      text-align: center;
+      padding: 1rem 0rem;
+      color: #000;
+    }
+  
+    .checkout-form{
+      text-align: center;
+      border: 2px solid $primary-orange;
+      padding: 1rem 2rem;
+      background-color: #fffeff;
+      border-radius: 15px;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      font-family: $secondary-font;
+  
+      input{
+        width: 50%;
+        margin: auto;
+        padding: 0.7rem;
+        border: 2px solid $primary-orange;
+        background-color: #fffeff;
+
+      }
+  
+      .form-label{
+        text-align: center;
+        display: block;
+        font-size: 1.4rem;
+        margin: 0.3rem 0rem;
+      }
+  
+      .btn-checkout {
+        margin: auto;
+        width: 30%;
+        font-family: $secondary-font;
+        color: $White;
+        background-color: $primary-orange;
+        border: 1px solid $primary-orange;
+        outline: none;
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+        border-radius: 5rem;
+        transition-duration: 0.5s;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+  
+        &:hover {
+          background-color: $primary-orange;
+        }
+      }
+    }
+  
+    .total{
+      background-color: $primary-orange;
+      color: #000;
+      width: 80%;
+      margin: 0 auto;
+      font-weight: bolder !important;
+      font-size: 0.9rem;
+      padding: 1rem 1.5rem;
+      position: relative;
+      top: .5rem;
+      border-radius: 15px;
+      border: 1px solid $primary-orange;
+    }
+  }
+  

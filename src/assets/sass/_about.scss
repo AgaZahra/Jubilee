@@ -1,0 +1,36 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-item {
+  margin-bottom: 30px;
+}
+
+.about-heading {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #7f8c8d;
+}
+
+ul.about-description {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul.about-description li {
+  margin-bottom: 10px;
+}

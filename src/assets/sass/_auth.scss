@@ -1,0 +1,34 @@
+.auth-container{
+   border: 1px solid  $primary-orange;
+   width: 50%;
+   padding: 20px;
+    margin: 0 auto !important;
+    margin-top: 2% !important;
+    text-align: center !important;
+    background: #efeee8;
+ border-radius: 15px;
+
+
+
+    input{
+        width: 30%;
+        margin: 3% 0%;
+        padding: 15px;
+        border: 2px solid $primary-orange;
+    }
+
+    .btn-icon ,button{
+        padding: 15px;
+        font-size: 1rem;
+        background-color: $primary-orange;
+        color: #fff;
+        border: 2px solid $primary-orange;
+
+        
+    }
+
+   
+    p{
+        margin-top: 2%;
+    }
+}
